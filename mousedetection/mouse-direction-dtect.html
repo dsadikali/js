@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title>Drag and Drop</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css">
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<style type="text/css">
+.dragclass{
+position : relative;
+cursor : move;
+}
+</style>
+
+
+<script type="text/javascript">
+//Drag and Drop script - http://www.btinternet.com/~kurt.grigg/javascript
+
+if  (document.getElementById){
+
+(function(){
+
+
+var n = 500;
+var dragok = false;
+var y,x,d,dy,dx;
+var upvar=0;
+var donwvar=0;
+
+function move(e){
+	upvar=e.clientX;
+if (!e) e = window.event;
+ if (dragok){
+  d.style.left = dx + e.clientX - x + "px";
+
+ 
+	if(upvar>donwvar)
+	{
+		alert('right')
+	}
+	else if(upvar<donwvar)
+	{
+		alert('left');
+	}
+ 
+  return false;
+ }
+}
+
+function down(e){
+donwvar = e.clientX
+
+if (!e) e = window.event;
+var temp = (typeof e.target != "undefined")?e.target:e.srcElement;
+if (temp.tagName != "HTML"|"BODY" && temp.className != "temp"){
+ temp = (typeof temp.parentNode != "undefined")?temp.parentNode:temp.parentElement;
+ }
+if (temp.className == "temp"){
+ if (window.opera){
+  document.getElementById("Q").focus();
+ }
+ dragok = true;
+ temp.style.zIndex = n++;
+ d = temp;
+ dx = parseInt(temp.style.left+0);
+
+ x = e.clientX;
+ 
+ document.onmousemove = move;
+ return false;
+ }
+}
+
+function up(){
+dragok = false;
+document.onmousemove = null;
+}
+
+document.onmousedown = down;
+document.onmouseup = up;
+
+})();
+}//End.
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<div class="temp" style="background:red; height:100px;"></div>
+<div class="temp1" style="background:green; height:100px;"></div>
+<div class="temp2" style="background:yellow; height:100px;"></div>
+
+</body>
+</html>
+
+           
+         

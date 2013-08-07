@@ -1,0 +1,27 @@
+/*
+	Background Stretcher jQuery Plugin
+	© 2009 ajaxBlender.com
+	For any questions please visit www.ajaxblender.com 
+	or email us at support@ajaxblender.com
+*/
+
+.slider {
+	background: black;
+	
+	width: 100%;
+	position: none !important;
+	z-index: 1;
+}
+.slider, .slider LI {
+	display:block !important;
+	opacity:1 !important;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.slider ,.slider LI {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

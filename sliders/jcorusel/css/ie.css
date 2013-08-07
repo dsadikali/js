@@ -1,0 +1,24 @@
+button, input, select, textarea{*vertical-align: middle;}
+.contact-number, #navigation, form#application, .offerboxInner, .post-entry .bottom-content a.image{behavior: url(pie.htc);}
+.searchbox, #subnavigation,  .annonces-rightcol, .dark-blue-btn, .light-blue-btn, .poptitle, form#application input{behavior: url(pie.htc); position:relative;}
+.jgd-dropdown dd{z-index:2;}
+ a.blue-button{background:url(../img/bgi/blue-btn-bg.png) no-repeat 0px 0px; height:25px; width:91px; border:0;  -webkit-box-shadow: 0 0px 0px 0px #D0D0D0; -moz-box-shadow: 0 0px 0px 0px #D0D0D0; box-shadow: 0 0px 0px 0px #D0D0D0;}
+.contentareaInner{background:url(../img/bgi/contentInner-bg.png) repeat-x bottom;  }
+.dark-blue-btn{ -pie-background: linear-gradient(top,  #1ca9db 0%, #126dbe 100%); }
+.light-blue-btn{ -pie-background: linear-gradient(top,  #93d0f6 0%,#5faaef 100%); }
+.subnavigationInner ul li ul{ -pie-background: linear-gradient(top,  #f2f2f2 0%,#fefefe 100%);}
+.annonces-rightcol{-pie-background: linear-gradient(top,  #b0d0ef 0%, #f2f5f6 100%);}
+.poptitle{-pie-background: linear-gradient(top,  #ffffff 0%, #ecf1f3 100%);}
+form#application{-pie-background: linear-gradient(top,  #fafafa 0%, #f2f2f2 100%);}
+html, body { *height:100%; }
+.ul-container{*width:612px;}
+#footer ul.nos-clients, #footer ul.recrutement{*padding-left:0px}
+.offer-section{*height:296px;}
+.narrowcolumn .video-box{*padding-bottom:3px;}
+form#application dt{padding-right:12px;}
+form#application dd{padding-right:21px;}
+.slider-link {bottom:-3px;}
+.home .ul-container{*width:660px;}
+.home #footer ul.nos-clients, .home #footer ul.recrutement{*padding-left:10px;}
+.home .footerInnerleftcol{*width:140px;}
+.home .footer-mainrightcol{width:283px;}

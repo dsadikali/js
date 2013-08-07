@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Luxxs Group</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#slider-vertical').cycle({
+        fx:     'scrollHorz',
+        speed:  'fast',
+        timeout: 10000,
+        pager:  '#nav-vertical',
+        pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#nav-vertical li:eq(' + (idx) + ') a';
+        }
+    });
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<!--Start Header-->
+		<div id="header">
+			<h1 id="logo"><a href="#" title="Luxxs Group"><img src="img/logo.jpg" alt="Luxxs Group" title="Luxxs Group"/></a></h1>
+			<ul id="mainnavigation" class="clearfix">
+				<li><a href="index.html" title="HOME">HOME</a></li>
+				<li><a href="#" title="UNTERNEHMEN">UNTERNEHMEN</a></li>
+				<li><a href="#" title="GROUP">GROUP</a></li>
+				<li><a href="#" title="FINANCE">FINANCE</a></li>
+				<li><a href="#" title="BUSINESS PARTNER">BUSINESS PARTNER</a></li>
+				<li><a href="#" title="CONSULTING">CONSULTING</a></li>
+			</ul>
+		</div>
+		<!--End Header-->
+		<!--Start Container -->
+		<div class="container clearfix">
+			<ul id="slider-vertical" class="alignleft">
+				<li>
+					<div class="description group">
+						<h2>WILLKOMMEN BEI LUXXS</h2>
+						<h3>| MARKENWÄCHTER DER LUXXS</h3>
+						<p>Die Luxxs Group bündelt alle Aktivitäten der Marke Luxxs. Sie steuert die interne und externe Kommunikation und achtet darauf, dass Richtlinien und gesetzliche Anforderungen des Marktes eingehalten und optimiert werden.</p>
+					</div>
+					<img src="img/galleryvr-img1.jpg" alt="" title=""/>
+				</li>
+				<li>
+					<div class="description finance">
+						<h2>FINANCE</h2>
+						<h3>| BERATUNG, BETREUUNG UND SYSTEMATISCHE FINANZPLANUNG</h3>
+						<p>Erinnern Sie sich an den Sherpa Tensing Norgay? Geduldig trug er das Gepäck von Sir Edmund Hillary den Mount Everest hinauf und wurde so Teil der Erfolgsgeschichte. Genauso schultern wir die drängenden Sorgen und Fragen unserer Kunden zu allen Finanzthemen.</p>
+					</div>
+					<img src="img/galleryvr-img2.jpg" alt="" title=""/>
+				</li>
+				<li>
+					<div class="description businesspartner">
+						<h2>BUSINESS PARTNER</h2>
+						<h3>| EXPERTEN KOOPERIEREN MIT EXPERTEN</h3>
+						<p>Als dienstleistungsorientierter Partner geben wir unser Wissen gerne an Makler, Berater und externe Experten weiter und setzen auf Zusammenarbeit als treibende Kraft. Unser Knowhow, unsere Innovationen und Dienstleistungen bieten wir zu Konditionen an, die überzeugen.</p>
+					</div>
+					<img src="img/galleryvr-img3.jpg" alt="" title=""/>
+				</li>
+				<li>
+					<div class="description cunsulting">
+						<h2>CONSULTING</h2>
+						<h3>| EXPERTEN KOOPERIEREN MIT EXPERTEN</h3>
+						<p>Als dienstleistungsorientierter Partner geben wir unser Wissen gerne an Makler, Berater und externe Experten weiter und setzen auf Zusammenarbeit als treibende Kraft. Unser Knowhow, unsere Innovationen und Dienstleistungen bieten wir zu Konditionen an, die überzeugen.</p>
+					</div>
+					<img src="img/galleryvr-img4.jpg" alt="" title=""/>
+				</li>
+			</ul>
+			<ul id="nav-vertical" class="alignright">
+				<li class="group">
+					<a href="#">&nbsp;</a>
+					<span class="bullet">&nbsp;</span>
+					<div>
+						<h3>GROUP</h3>
+						Markenwächter der Luxxs
+					</div>
+				</li>
+				<li class="finance">
+					<a href="#">&nbsp;</a>
+					<span class="bullet">&nbsp;</span>
+					<div>
+						<h3>FINANCE</h3>
+						Markenwächter der Luxxs
+					</div>
+				</li>
+				<li class="businesspartner">
+					<a href="#">&nbsp;</a>
+					<span class="bullet">&nbsp;</span>
+					<div>
+						<h3>BUSINESS PARTNER</h3>
+						Markenwächter der Luxxs
+					</div>
+				</li>
+				<li class="consulting">
+					<a href="#">&nbsp;</a>
+					<span class="bullet">&nbsp;</span>
+					<div>
+						<h3>CONSULTING</h3>
+						Markenwächter der Luxxs
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--End Container-->
+		<!--Start Footer-->
+		<div id="footer">
+			<ul class="footer-nav">
+				<li><a href="#" title="KONTAKT">KONTAKT</a></li>
+				<li><a href="#" title="IMPRESSUM">IMPRESSUM</a></li>
+				<li><a href="#" title="DATENSCHUTZ">DATENSCHUTZ</a></li>
+				<li><a href="#" title="KARRIERE">KARRIERE</a></li>
+				<li><a href="#" title="PRESSE">PRESSE</a></li>
+				<li class="last"><a href="#"><img src="img/fb-icon.jpg" alt="" title=""/></a></li>
+			</ul>
+		</div>
+		<!--End Footer-->
+	</div>
+</body>
+</html>

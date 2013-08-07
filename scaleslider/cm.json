@@ -1,0 +1,28 @@
+{"data": {
+	"triumph_dimensions" :{	
+		"dimensions": {
+			"cupdrag": {
+				"minimum": 75,
+				"defaults": 90,
+				"maximum": 148
+			},
+			"bustdrag": {
+				"minimum": 63,
+				"defaults": 70,
+				"maximum": 122
+			},
+			"waistdrag": {
+				"minimum": 58,
+				"defaults": 60,
+				"maximum": 117
+			},
+			"hipdrag": {
+				"minimum": 88,
+				"defaults": 90,
+				"maximum": 128
+			}
+		},
+		"unit":"cm",
+		"steps":5
+	}
+}}

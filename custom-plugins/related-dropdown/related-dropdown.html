@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<style>
+#month, #year{overflow:hidden}
+.selected-month{display:none;}
+ul li, ul li a{color:#666;}
+ul li.selected-li, ul li.selected-li a{color:#0FF;}
+.selected-li
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+	var 
+	year_height = $('#year').height(),
+	month_height = $('#month').height(),
+	effect='easeOutBounce',
+	duration=1000;
+	
+	$('#year, #month').css('height',0);
+	$('#year li').click(function(){
+		var year = $(this).text();
+		$('#year').animate({height:0},duration,effect);
+		$('.selected-year').removeClass('selected');
+		$('#year li').removeClass('selected-li');
+		$(this).addClass('selected-li');
+		$('#month li').each(function(){
+			$(this).find('a').attr('href',year+$(this).text());
+		});
+		$('.selected-month').show();
+	});
+	$('.selected-year, .selected-month').click(function(){
+		$(this).toggleClass('selected');
+		if($(this).hasClass('selected'))
+			$(this).next('ul').stop(true,false).animate({height:year_height},duration,effect);
+		else
+		{
+			$(this).next('ul').stop(true,false).animate({height:0},duration,effect);
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="selected-year">Please Select year</div>
+<ul id="year">
+<li>2013</li>
+<li>2012</li>
+<li>2011</li>
+<li>2010</li>
+<li>2009</li>
+</ul>
+<div class="selected-month">Please Select month</div>
+<ul id="month">
+<li><a href="" title="JANUARY">JANUARY</a></li>
+<li><a href="" title="FEBRUARY">FEBRUARY</a></li>
+<li><a href="" title="MARCH">MARCH</a></li>
+<li><a href="" title="APRIL">APRIL</a></li>
+<li><a href="" title="MAY">MAY</a></li>
+</ul>
+</body>
+</html>

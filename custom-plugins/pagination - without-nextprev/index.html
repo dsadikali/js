@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pagination</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style>
+ul,li{list-style:none; margin:0; padding:0}
+a{color:#000; text-decoration:none }
+.cf:before, .cf:after{ content:""; display:table; }
+.cf:after{ clear:both; }
+.cf{ zoom:1; }
+
+
+.articleBoxOuter, .articleBoxOuter1{width:373px; border:1px solid #000; padding:10px; margin-bottom:10px; background:#666 }
+.articleBox, li{text-align:center;}
+.articleBox.first{color:#0F0;}
+.articleBox.last{color:#f00; }
+.pagination, .itemPerPage{padding:10px 0; border-bottom:1px dashed #000; border-top:1px dashed #000; }
+.first-pag{border-top:0}
+.itemPerPage{border-bottom:0; margin:0; border-bottom:1px dashed #000;}
+.pagination a, .pagination span, .itemPerPage dd, .itemPerPage dt{float:left; margin-right:10px; margin-left:0;}
+.pagination ul{float:left}
+.pagination ul li.active a, .itemPerPage dd.active a{color:#Fff;}
+.pagination li{ margin-right:4px; display:block; float:left; }
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.articleBox').pagination( {
+		Mainwrapper : '.articleBoxOuter',
+		Wrapper:".articleBox",
+		show_disable_links:false,
+		Element_per_page:6,
+		number_of_middle_button:3,
+		first_last:3
+		/*
+		pagination:".pagination",
+		Next:'next',
+		Previous:'prevPage',
+		number_of_middle_button:5,
+		
+		show_first_last_links:true,
+		First_Link:'Gofirst',
+		Last_Link:'Golast',
+		Items_per_page_wrapper:'itemPerPage',
+		first_last:3   1. Show first last links,
+					   2. Show first number last number
+					   3. Show both*/
+	} );
+	
+	$('.articleBox1').pagination( {
+		Mainwrapper : '.articleBoxOuter1',
+		Wrapper:'.pagination-wrapper li',
+		Element_per_page:5,
+		number_of_middle_button:5
+	} );
+});
+</script>
+</head>
+<body>
+   <div class="cf">
+      
+      
+    </div>
+<div class="cf articleBoxOuter">
+<h2>Hide Disable links</h2>
+<h2>By default 3 items per page</h2>
+<dl class="itemPerPage cf">
+        <dt>Items per page</dt>
+        <dd><a href="javascript:;" title="">3</a></dd>
+        <dd><a href="javascript:;" title="">4</a></dd>
+        <dd><a href="javascript:;" title="">5</a></dd>
+        <dd class="active"><a href="javascript:;" title="">6</a></dd>
+        <dd><a href="javascript:;" title="">10</a></dd>
+        <dd class="last"><a href="javascript:;" title="">All</a></dd>
+      </dl>
+  <div class="pagination first-pag cf"></div>
+  <div class="articleBox">1</div>
+  <div class="articleBox">2</div>
+  <div class="articleBox">3</div>
+  <div class="articleBox">4</div>
+  <div class="articleBox">5</div>
+  <div class="articleBox">6</div>
+  <div class="articleBox">7</div>
+  <div class="articleBox">8</div>
+  <div class="articleBox">9</div>
+  <div class="articleBox">10</div>
+  <div class="articleBox">11</div>
+  <div class="articleBox">12</div>
+  <div class="articleBox">13</div>
+  <div class="articleBox">14</div>
+  <div class="articleBox">15</div>
+  <div class="articleBox">16</div>
+  <div class="articleBox">17</div>
+  <div class="articleBox">18</div>
+  <div class="articleBox">19</div>
+  <div class="articleBox">20</div>
+  <div class="articleBox">21</div>
+  <div class="articleBox">22</div>
+  <div class="articleBox">23</div>
+  <div class="articleBox">24</div>
+  <div class="pagination cf"></div>
+</div>
+
+<div class="articleBoxOuter1">
+<h2>Show Disable links</h2>
+<h2>By default 5 items per page</h2>
+<dl class="itemPerPage cf">
+        <dt>Items per page</dt>
+        <dd><a href="javascript:;" title="">2</a></dd>
+        <dd><a href="javascript:;" title="">3</a></dd>
+        <dd class="active"><a href="javascript:;" title="">5</a></dd>
+        <dd><a href="javascript:;" title="">10</a></dd>
+        <dd class="last"><a href="javascript:;" title="">All</a></dd>
+      </dl>
+  <div class="pagination first-pag cf"></div>
+  <ul class="pagination-wrapper">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+  </ul>
+  <div class="pagination cf"></div>
+</div>
+</body>
+</html>

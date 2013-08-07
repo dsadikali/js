@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+.item{ height:253px; width:1280px;}
+#image1{background:url(http://0.tqn.com/d/testprep/1/0/E/-/-/-/student-taking-test.jpg);}
+#image2{background:url(http://onerahi.cabu.school.nz/files/2012/09/goes-12-firstimage-large081701.jpg);}
+#image3{background:url(http://jeremydouglass.com/gamertextually/images/gt_snowflake_tags-2-ach-large.png);}
+.proloader{background:url(spinner.gif) center center no-repeat !important;}
+.check-url{display:none;}
+</style>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	$(function() {
+		
+    $(".item").each(function() {
+		var ele = $(this);
+        var bg = $(this).css('background-image');
+        bg = bg.replace('url(','').replace(')','');
+        $('.check-url').append('<img title="'+$(this).attr('id')+'" src='+bg+' />')
+		$(this).addClass('proloader');
+	});
+	$('.check-url img').each(function(){
+		$(this).load(function(){
+			$('#'+$(this).attr('title')).removeClass('proloader');
+		});
+			
+		});
+});
+	
+</script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="image2" class="item">123</div>
+<div id="image1" class="item">123</div>
+<div id="image3" class="item">123</div>
+<div class="check-url">
+</div>
+</body>
+</html>

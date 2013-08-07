@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Simple Tabber Example</title>
+<style>
+ul,li{list-style:none; margin:0; padding:0}
+a{color:#000; text-decoration:none }
+.active a{color:#F00}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/tabbing-min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.tabbertab').tabbing( {
+			TabClass:'.tab',
+			FirstTimeShow:"tab1",
+			active_addressbar:true
+	} );
+	
+		$('.innertabbertab').tabbing( {
+			TabClass:'.innertab',
+			FirstTimeShow:"innertab1",
+			active_addressbar:true
+	} );
+	
+});
+</script>
+</head>
+<body>
+  <ul class="tabs123">
+    <li class="tab"><a href="#tab1"  title="tab1">tab1</a></li>
+    <li class="tab"><a href="#tab2" title="tab2">tab2</a></li>
+    <li class="tab"><a href="#tab3" title="tab3">tab3</a></li>
+  </ul>
+  <div class="tabber">
+    <div id="tab1" class="tabbertab">Tab 1 content.</div>
+    <div id="tab2" class="tabbertab">Tab 2 content.
+    
+    <ul class="tabs123">
+    <li class="innertab"><a href="#innertab1"  title="innertab1">inner tab1</a></li>
+    <li class="innertab"><a href="#innertab2" title="innertab2">inner tab2</a></li>
+    <li class="innertab"><a href="#innertab3" title="innertab3">inner tab3</a></li>
+  </ul>
+  <div class="tabber">
+    <div id="innertab1" class="innertabbertab">Tab 1 content.</div>
+    <div id="innertab2" class="innertabbertab">Tab 2 content.</div>
+    <div id="innertab3" class="innertabbertab">Tab 3 content.</div>
+  </div>
+    </div>
+    <div id="tab3" class="tabbertab">Tab 3 content.</div>
+  </div>
+
+</body>
+</html>

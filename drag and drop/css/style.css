@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document 1 jan 2012 */
+
+body { background:url(../img/main_bg.jpg); margin:10px opx opx opx; padding:10px;}
+
+h1, h2 { font-family:Georgia, "Times New Roman", Times, serif; font-size:24px;  color:#CCC; line-height:26px;}
+h2 { font-size:20px;  color:#FC3; line-height:20px;}
+p{ font-size:14px; color:#666; }
+
+
+
+#wrapper {margin:0 auto; width:900px;}
+.demo{ width:880Spx; height:600px; padding:10px; border:2px solid #666;  }
+	#draggable , #draggable1, #draggable2, #draggable3, #draggable4 { width: 50px; height: 50px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; border:2px solid #000; }
+	#draggable  {background-image:url(../img/sofa1/sofa-1-mat-1.jpg); background-repeat:no-repeat;}
+	#draggable1 {background-image:url(../img/sofa1/sofa-1-mat-2.jpg); background-repeat:no-repeat;}
+	#draggable2 {background-image:url(../img/sofa1/sofa-1-mat-3.jpg); background-repeat:no-repeat;}
+	#draggable3 {background-image:url(../img/sofa1/sofa-1-mat-4.jpg); background-repeat:no-repeat;}
+	#draggable4 {background-image:url(../img/sofa1/sofa-1-mat-5.jpg); background-repeat:no-repeat;}
+
+	.droppablebox {width:650px; height:450px; border:1px solid #ccc; position:relative;   float:right; z-index:1; background:url(../img/sofa1bg.png) no-repeat -85px -140px;}
+	.productbox { width:500px; height:300px; position:absolute; bottom:-150px; left:50px;}
+	.dragbox    {width:160px; height:auto; border:1px solid #666; float:left; position:relative; z-index:2; list-style:none; }
+	.option     { width:180px; height:auto; float:left; }
+	
+	/*Top*/
+	.sofa1 {position:absolute; left:-2px; top:-120px; z-index:0; }
+	.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10 { z-index:1;}
+	.s1{ position:absolute; left:77px; top:-1px; }
+	.s2{ position:absolute; left:203px; top:-2px; }
+	.s3{ position:absolute; left:350px; top:0px; }
+	/*middle*/
+	.s4{ position:absolute; left:219px; top:-69px; }
+	.s5{ position:absolute; left:344px; top:-69px; }
+	.s6{ position:absolute; left:107px; top:-68px; }
+	/*bottom*/
+	.s7{ position:absolute; left:0px; top:-50px; }
+	.s8{ position:absolute; left:444px; top:-50px; }
+	.s9{ position:absolute; left:0px; top:65px; }
+	/* topup*/
+    .s10{ position:absolute; left:221px; top:-119px; }
+	
+	.droppable3,.droppable4,.droppable5 {position:relative; left:0; bottom:0px;}

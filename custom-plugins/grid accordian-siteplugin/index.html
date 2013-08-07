@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Grid Accordion</title>
+<link rel="stylesheet" type="text/css" href="css/grid-accordion.css" media="screen"/>
+
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.gridAccordion.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+    $('.accordion').gridAccordion({
+        width: 900,
+        height: 600,
+        columns: 4,
+        distance: 1,
+        openedPanelWidth: '350',
+        openedPanelHeight: '350',
+        alignType: 'centerCenter',
+        slideshow: true,
+        panelProperties: {
+            0: {
+                captionWidth: 200,
+                captionHeight: 35,
+                captionTop: 30,
+                captionLeft: 30
+            },
+            4: {
+                captionWidth: 150,
+                captionHeight: 100,
+                captionTop: 30,
+                captionLeft: 650
+            },
+            7: {
+                captionWidth: 310,
+                captionHeight: 35,
+                captionTop: 350,
+                captionLeft: 40
+            },
+            8: {
+                captionWidth: 300,
+                captionHeight: 40,
+                captionTop: 150,
+                captionLeft: 35
+            },
+            11: {
+                captionWidth: 150,
+                captionHeight: 120,
+                captionTop: 300,
+                captionLeft: 30
+            },
+            14: {
+                captionWidth: 300,
+                captionHeight: 40,
+                captionTop: 30,
+                captionLeft: 50
+            },
+            16: {
+                captionWidth: 150,
+                captionHeight: 120,
+                captionTop: 150,
+                captionLeft: 10
+            },
+            18: {
+                captionWidth: 300,
+                captionHeight: 40,
+                captionTop: 130,
+                captionLeft: 50
+            }
+        }
+    });
+});
+	
+</script>
+</head>
+
+<body>
+<ul class="accordion" style="margin:100px auto 0;">
+  <li> <img src="img/image1.jpg" alt=""/>
+    <div class="caption">This is just a simple caption.</div>
+  </li>
+  <li> <img src="img/image2.jpg" alt=""/> </li>
+  <li> <img src="img/image3.jpg" alt=""/> </li>
+  <li> <img src="img/image4.jpg" alt=""/> </li>
+  <li> <img src="img/image5.jpg" alt=""/>
+    <div class="caption"><u>Title</u><br/>
+      <br/>
+      This is a list of items:
+      <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+      </ul>
+    </div>
+  </li>
+  <li> <img src="img/image6.jpg" alt=""/> </li>
+  <li> <img src="img/image7.jpg" alt=""/> </li>
+  <li> <img src="img/image8.jpg" alt=""/>
+    <div class="caption">Captions can have any position and any size.</div>
+  </li>
+  <li> <img src="img/image9.jpg" alt=""/>
+    <div class="caption">Add <b>HTML</b> elements like <a href="http://codecanyon.net">links</a> or
+      <input type="button" value="Buttons"/>
+    </div>
+  </li>
+  <li> <img src="img/image10.jpg" alt=""/> </li>
+  <li> <img src="img/image11.jpg" alt=""/> </li>
+  <li> <img src="img/image12.jpg" alt=""/>
+    <div class="caption"><u>Title</u><br/>
+      <br/>
+      This is a list of items:
+      <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+      </ul>
+    </div>
+  </li>
+  <li> <img src="img/image13.jpg" alt=""/> </li>
+  <li> <img src="img/image14.jpg" alt=""/> </li>
+  <li> <img src="img/image15.jpg" alt=""/>
+    <div class="caption">Add <b>HTML</b> elements like <a href="http://codecanyon.net">links</a> or
+      <input type="button" value="Buttons"/>
+    </div>
+  </li>
+  <li> <img src="img/image16.jpg" alt=""/> </li>
+  <li> <img src="img/image17.jpg" alt=""/>
+    <div class="caption"><u>Title</u><br/>
+      <br/>
+      This is a list of items:
+      <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+      </ul>
+    </div>
+  </li>
+  <li> <img src="img/image18.jpg" alt=""/> </li>
+  <li> <img src="img/image19.jpg" alt=""/>
+    <div class="caption">Add <b>HTML</b> elements like <a href="http://codecanyon.net">links</a> or
+      <input type="button" value="Buttons"/>
+    </div>
+  </li>
+  <li> <img src="img/image20.jpg" alt=""/> </li>
+</ul>
+</body>
+</html>

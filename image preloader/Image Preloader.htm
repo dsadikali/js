@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Image Preloader</title>
+<script type="text/javascript" src="./Image Preloader_files/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="./Image Preloader_files/jquery.preloader.js"></script>
+<script type="text/javascript">
+
+
+window.onload=function() {
+obj=document.getElementById('myDiv');
+if(obj.currentStyle) {
+
+/****************************************
+
+IE Opera
+
+****************************************/
+
+alert('background-image= '+obj.currentStyle.backgroundImage);
+alert('width= '+obj.currentStyle.width);
+alert('height= '+obj.currentStyle.height);
+}
+else {
+
+/****************************************
+
+Firefox needs the full css code to work
+
+****************************************/
+
+alert('background-image= '+getComputedStyle(obj,'').getPropertyValue('background-image'));
+alert('width= '+getComputedStyle(obj,'').getPropertyValue('width'));
+alert('height= '+getComputedStyle(obj,'').getPropertyValue('height'));
+
+
+}
+}
+
+$(function(){
+	
+	$("#gallery").preloader();
+	
+	});
+</script>
+<link rel="stylesheet" href="./Image Preloader_files/preloader.css" type="text/css">
+
+</head>
+
+<body>
+
+    <ul id="gallery" class="clearfix">
+        <li ><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><!--<img src="http://0.tqn.com/d/testprep/1/0/E/-/-/-/student-taking-test.jpg" > --></a></p></li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="http://upload.wikimedia.org/wikipedia/commons/4/4e/Test_V750_7.jpg" ></a></p> </li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="./Image Preloader_files/3.jpg" ></a></p> </li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="./Image Preloader_files/4.jpg" ></a></p></li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="./Image Preloader_files/5.jpg" ></a></p> </li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="./Image Preloader_files/6.jpg" ></a></p> </li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="./Image Preloader_files/7.jpg" ></a></p> </li>
+        <li><p><a href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#" class=""><img src="./Image Preloader_files/8.jpg" ></a></p> </li>
+        <li ><p><a id="myDiv" class="home" href="http://nettuts.s3.amazonaws.com/860_preloaderPlugin/index.html#"><!--<img src="./Image Preloader_files/9.jpg" > --></a></p> </li>
+    </ul>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,319 @@
+{"data": {
+	"sizes": {
+		"underwear": [
+			{
+				"waist": {
+					"min": 58, 
+					"max": 62
+				},
+				"hip": {
+					"min": 88, 
+					"max": 91
+				},
+				"name": "34/36"
+			},
+			{
+				"waist": {
+					"min": 63, 
+					"max": 67
+				},
+				"hip": {
+					"min": 92, 
+					"max": 95
+				},
+				"name": "36/38"
+			},
+			{
+				"waist": {
+					"min": 68, 
+					"max": 72
+				},
+				"hip": {
+					"min": 96, 
+					"max": 99
+				},
+				"name": "38/40"
+			},
+			{
+				"waist": {
+					"min": 73, 
+					"max": 77
+				},
+				"hip": {
+					"min": 100, 
+					"max": 103
+				},
+				"name": "40/42"
+			},
+			{
+				"waist": {
+					"min": 78, 
+					"max": 82
+				},
+				"hip": {
+					"min": 104, 
+					"max": 107
+				},
+				"name": "42/44"
+			},
+			{
+				"waist": {
+					"min": 83, 
+					"max": 87
+				},
+				"hip": {
+					"min": 108, 
+					"max": 110
+				},
+				"name": "44/46"
+			},
+			{
+				"waist": {
+					"min": 88, 
+					"max": 92
+				},
+				"hip": {
+					"min": 111, 
+					"max": 113
+				},
+				"name": "46/48"
+			},
+			{
+				"waist": {
+					"min": 93, 
+					"max": 97
+				},
+				"hip": {
+					"min": 114, 
+					"max": 116
+				},
+				"name": "48/50"
+			},
+			{
+				"waist": {
+					"min": 98, 
+					"max": 102
+				},
+				"hip": {
+					"min": 117, 
+					"max": 119
+				},
+				"name": "50/52"
+			},
+			{
+				"waist": {
+					"min": 103, 
+					"max": 107
+				},
+				"hip": {
+					"min": 120, 
+					"max": 122
+				},
+				"name": "52/54"
+			},
+			{	
+				"waist": {
+					"min": 108, 
+					"max": 112
+				},
+				"hip": {
+					"min": 123, 
+					"max": 125
+				},
+				"name": "54/56"
+			},
+			{
+				"waist": {
+					"min": 113, 
+					"max": 117
+				},
+				"hip": {
+					"min": 126, 
+					"max": 128
+				},
+				"name": "56/58"
+			}
+		],
+		"tops": 
+		[
+			{
+				"bust": {
+					"min": 63, 
+					"max": 67
+				},
+				"name": "65",
+				"cup": [
+					{
+						"min": 75,
+						"max": 77, 
+						"type":"AA"
+					},
+					{
+						"min": 77, 
+						"max": 79, 
+						"type":"A"
+					},
+					{
+						"min": 79, 
+						"max": 81, "type":"B"
+					},
+					{	
+						"min": 81, 
+						"max": 83, "type":"C"
+					},
+					{	
+						"min": 83, 
+						"max": 85, "type":"D"
+					},
+					{
+						"min": 85, 
+						"max": 87, "type":"E"
+					}
+				]
+			},
+			{
+				"bust": {
+					"min": 68, 
+					"max": 72
+				},
+				"cup": [
+					{
+						"min": 80, 
+						"max": 82, 
+						"type":"AA"
+					},
+					{"min": 82, "max": 84, "type":"A"},
+					{"min": 84, "max": 86, "type":"B"},
+					{"min": 86, "max": 88, "type":"C"},
+					{"min": 88, "max": 90, "type":"D"},
+					{"min": 90, "max": 92, "type":"E"},
+					{"min": 92, "max": 94, "type":"F"},
+					{"min": 94, "max": 96, "type":"G"},
+					{"min": 96, "max": 98, "type":"H"}],
+				"name": "70"
+			},
+			{
+				"bust": {"min": 73, "max": 77},
+				"cup": [{"min": 85, "max": 87, "type":"AA"},
+						{"min": 87, "max": 89, "type":"A"},
+						{"min": 89, "max": 91, "type":"B"},
+						{"min": 91, "max": 93, "type":"C"},
+						{"min": 93, "max": 95, "type":"D"},
+						{"min": 95, "max": 97, "type":"E"},
+						{"min": 97, "max": 99, "type":"F"},
+						{"min": 99, "max": 101, "type":"G"},
+						{"min": 101, "max": 103, "type":"H"}],
+				"name": "75"
+			},
+			{
+				"bust": {"min": 78, "max": 82},
+				"cup": [{"min": 90, "max": 92, "type":"AA"},
+						{"min": 92, "max": 94, "type":"A"},
+						{"min": 94, "max": 96, "type":"B"},
+						{"min": 96, "max": 98, "type":"C"},
+						{"min": 98, "max": 100, "type":"D"},
+						{"min": 100, "max": 102, "type":"E"},
+						{"min": 102, "max": 104, "type":"F"},
+						{"min": 104, "max": 106, "type":"G"},
+						{"min": 106, "max": 108, "type":"H"}],
+				"name": "80"
+			},
+			{
+				"bust": {"min": 83, "max": 87},
+				"cup": [{"min": 95, "max": 97, "type":"AA"},
+						{"min": 97, "max": 99, "type":"A"},
+						{"min": 99, "max": 101, "type":"B"},
+						{"min": 101, "max": 103, "type":"C"},
+						{"min": 103, "max": 105, "type":"D"},
+						{"min": 105, "max": 107, "type":"E"},
+						{"min": 107, "max": 109, "type":"F"},
+						{"min": 109, "max": 111, "type":"G"},
+						{"min": 111, "max": 113, "type":"H"}],
+				"name": "85"
+			},
+			{
+				"bust": {"min": 88, "max": 92},
+				"cup": [{"min": 100, "max": 102, "type":"AA"},
+						{"min": 102, "max": 104, "type":"A"},
+						{"min": 104, "max": 106, "type":"B"},
+						{"min": 106, "max": 108, "type":"C"},
+						{"min": 108, "max": 110, "type":"D"},
+						{"min": 110, "max": 112, "type":"E"},
+						{"min": 112, "max": 114, "type":"F"},
+						{"min": 114, "max": 116, "type":"G"},
+						{"min": 116, "max": 118, "type":"H"}],
+				"name": "90"
+			},
+			{
+				"bust": {"min": 93, "max": 97},
+				"cup": [{"min": 105, "max": 107, "type":"AA"},
+						{"min": 107, "max": 109, "type":"A"},
+						{"min": 109, "max": 111, "type":"B"},
+						{"min": 111, "max": 113, "type":"C"},
+						{"min": 113, "max": 115, "type":"D"},
+						{"min": 115, "max": 117, "type":"E"},
+						{"min": 117, "max": 119, "type":"F"},
+						{"min": 119, "max": 121, "type":"G"},
+						{"min": 121, "max": 123, "type":"H"}],
+				"name": "95"
+			},
+			{
+				"bust": {"min": 98, "max": 102},
+				"cup": [{"min": 112, "max": 114, "type":"A"},
+						{"min": 114, "max": 116, "type":"B"},
+						{"min": 116, "max": 118, "type":"C"},
+						{"min": 118, "max": 120, "type":"D"},
+						{"min": 120, "max": 122, "type":"E"},
+						{"min": 122, "max": 124, "type":"F"},
+						{"min": 124, "max": 126, "type":"G"},
+						{"min": 126, "max": 128, "type":"H"}],
+				"name": "100"
+			},
+			{
+				"bust": {"min": 103, "max": 107},
+				"cup": [{"min": 117, "max": 119, "type":"A"},
+						{"min": 119, "max": 121, "type":"B"},
+						{"min": 121, "max": 123, "type":"C"},
+						{"min": 123, "max": 125, "type":"D"},
+						{"min": 125, "max": 127, "type":"E"},
+						{"min": 127, "max": 129, "type":"F"},
+						{"min": 129, "max": 131, "type":"G"},
+						{"min": 131, "max": 133, "type":"H"}],
+				"name": "105"
+			},
+			{	
+				"bust": {"min": 108, "max": 112},
+				"cup": [{"min": 124, "max": 126, "type":"B"},
+						{"min": 126, "max": 128, "type":"C"},
+						{"min": 128, "max": 130, "type":"D"},
+						{"min": 130, "max": 132, "type":"E"},
+						{"min": 132, "max": 134, "type":"F"},
+						{"min": 134, "max": 136, "type":"G"},
+						{"min": 136, "max": 138, "type":"H"}],
+				"name": "110"
+			},
+			{
+				"bust": {"min": 113, "max": 117},
+				"cup": [{"min": 129, "max": 131, "type":"B"},
+						{"min": 131, "max": 133, "type":"C"},
+						{"min": 133, "max": 135, "type":"D"},
+						{"min": 135, "max": 137, "type":"E"},
+						{"min": 137, "max": 139, "type":"F"},
+						{"min": 139, "max": 141, "type":"G"},
+						{"min": 141, "max": 143, "type":"H"}],
+				"name": "115"
+			},
+			{
+				"bust": {"min": 118, "max": 122},
+				"cup": [{"min": 134, "max": 136, "type":"B"},
+						{"min": 136, "max": 138, "type":"C"},
+						{"min": 138, "max": 140, "type":"D"},
+						{"min": 140, "max": 142, "type":"E"},
+						{"min": 142, "max": 144, "type":"F"},
+						{"min": 144, "max": 146, "type":"G"},
+						{"min": 146, "max": 148, "type":"H"}],
+				"name": "120"
+			}
+		]
+	}
+}}

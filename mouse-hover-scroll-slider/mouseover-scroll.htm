@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Create a Scrolling Menu: Result</title>
+<script src="mouseover-scroll_files/jquery.js" type="text/javascript"></script>
+<style type="text/css">
+body {
+	padding:0px; margin:0px;
+}
+div.sc_menu {
+	/* Set it so we could calculate the offsetLeft */
+	position: relative;
+	height: 145px; 
+	width: 500px; padding:0px 20px; margin:50px;
+	overflow: auto; background:#999; -moz-border-radius:5px; 
+}
+ul.sc_menu {
+	display: block;
+	height: 110px;
+	/* max width here, for users without javascript */	
+	width: 1500px;	
+	padding: 15px 0 0 15px; 
+	/* removing default styling */
+	margin: 0;
+
+	list-style: none;
+}
+.sc_menu li {
+	display: block;
+	float: left;	
+	padding: 0 4px;
+}
+.sc_menu a {
+	display: block;
+	text-decoration: none;
+}
+.sc_menu span {
+	display: none;
+	margin-top: 5px;
+	
+	text-align: center;
+	font-size: 30px;	
+	color: #fff;
+}
+.sc_menu a:hover span {
+	display: block;
+}
+.sc_menu img {
+	border: 3px #fff solid;	
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.sc_menu a:hover img {
+	filter:alpha(opacity=50);	
+	opacity: 0.5;
+}
+
+
+/* Here are styles for the back button, don't look at them */
+#back {
+	display: block;
+	width: 500px;
+	text-align: center;
+	color: #003469;
+	font-size: 16px;
+}
+</style>
+<script type="text/javascript">/*<![CDATA[*/
+$(function(){
+	//Get our elements for faster access and set overlay width
+	var div = $('div.sc_menu'),
+		ul = $('ul.sc_menu'),
+		ulPadding = 50;
+	
+	//Get menu width
+	var divWidth = div.width();
+
+	//Remove scrollbars	
+	div.css({overflow: 'hidden'});
+	
+	//Find last image container
+	var lastLi = ul.find('li:last-child');
+	
+	//When user move mouse over menu
+	div.mousemove(function(e){
+		//As images are loaded ul width increases,
+		//so we recalculate it each time
+		var ulWidth = lastLi[0].offsetLeft + lastLi.outerWidth() + ulPadding;	
+		var left = (e.pageX - div.offset().left) * (ulWidth-divWidth) / divWidth;
+		div.scrollLeft(left);
+	});
+});
+/*]]>*/</script>
+</head><body>
+<div style="overflow: hidden;" class="sc_menu">
+	<ul class="sc_menu">
+	    <li><a href="#"><img src="mouseover-scroll_files/1.jpg" alt="Menu"><span>Menu</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/2.jpg" 
+alt="Navigation"><span>Navigation</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/3.jpg" 
+alt="Javascript"><span>jQuery</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/4.jpg" alt="CSS"><span>Scroll</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/5.jpg" 
+alt="Horizontal"><span>Horizontal</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/6.jpg" 
+alt="jQuery"><span>jQuery</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/1.jpg" alt="Menu"><span>Menu</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/2.jpg" 
+alt="Navigation"><span>Navigation</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/3.jpg" 
+alt="Graceful"><span>Graceful</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/4.jpg" 
+alt="Degradation"><span>Degradation</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/5.jpg" 
+alt="Progressive"><span>Progressive</span></a></li>
+	    <li><a href="#"><img src="mouseover-scroll_files/6.jpg" 
+alt="Enhancement"><span>Enhancement</span></a></li>	
+	</ul>
+</div>
+<a id="back" href="http://valums.com/scroll-menu-jquery/">Back to 
+article</a>
+</body></html>

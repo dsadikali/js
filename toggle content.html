@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .wrapper{background:#555; height:600px;}
+  p { color:red; margin:5px; cursor:pointer; }
+  #signin_menu{display:none;}
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div id="topnav" class="topnav">Have an account? <a href="#" class="signin"><span>Sign in</span></a></div> 
+
+ <div id="signin_menu">
+    
+     asdfadsfasd fasd fasd f dasfadf
+    </div>
+<script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".signin").click(function() {
+                $("#signin_menu").toggle();
+				$(".signin").toggleClass("menu-open");
+            });
+			
+			$("#signin_menu").mouseup(function() {
+				return false
+			});
+			$(document).mouseup(function(e) {
+				if($(e.target).parent("a.signin").length==0) {
+					$(".signin").removeClass("menu-open");
+					$("#signin_menu").hide();
+				}
+			});			
+			
+        });
+  </script>
+
+</body>
+</html>

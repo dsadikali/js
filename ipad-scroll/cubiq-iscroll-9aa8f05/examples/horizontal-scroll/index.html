@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>iScroll demo: horizontal scroll</title>
+
+<script type="application/javascript" src="../../src/iscroll.js"></script>
+
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper');
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script>
+
+<style type="text/css" media="all">
+body,ul,li {
+	padding:0;
+	margin:0;
+}
+
+body {
+	font-size:12px;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+/*	-webkit-box-sizing:border-box;*/
+	font-family:helvetica;
+/*	padding-bottom:45px;	/*	This prevents the scroller to lock if the user swipes down outside of the screen.
+							 	NOT needed if in home screen mode. */
+}
+
+
+#wrapper {
+	position:absolute; z-index:1;
+	top:0px; bottom:0; left:0;
+	width:100%;
+	overflow:auto;
+}
+
+#scroller {
+	width:1540px;
+	height:100%;
+	float:left;
+	padding:0;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+			<li>Pretty col 1</li>
+			<li>Pretty col 2</li>
+			<li>Pretty col 3</li>
+			<li>Pretty col 4</li>
+			<li>Pretty col 5</li>
+			<li>Pretty col 6</li>
+			<li>Pretty col 7</li>
+			<li>Pretty col 8</li>
+			<li>Pretty col 9</li>
+			<li>Pretty col 10</li>
+			<li>Pretty col 11</li>
+			<li>Pretty col 12</li>
+			<li>Pretty col 13</li>
+			<li>Pretty col 14</li>
+			<li>Pretty col 15</li>
+			<li>Pretty col 16</li>
+			<li>Pretty col 17</li>
+			<li>Pretty col 18</li>
+			<li>Pretty col 19</li>
+			<li>Pretty col 20</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

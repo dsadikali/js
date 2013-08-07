@@ -1,0 +1,35 @@
+<script type="text/javascript">
+ 
+	// Define the jQuery plugin.
+	jQuery.fn.Test = function( objOptions ){
+ 
+		// Use the passed-in option to override any default
+		// option that are provided by the plugin.
+		var objSettings = jQuery.extend(
+			{},
+			jQuery.fn.Test.Default,
+			objOptions
+			);
+ 
+		// Alert the final data value.
+		alert( objSettings.Data );
+ 
+		// Return this for method chaining.
+		return( this );
+	}
+ 
+	// Define the jQuery method's default properties.
+	jQuery.fn.Test.Default = {
+		Data: "Default data"
+		};
+ 
+ 
+	// When the document has loaded, run the plugin.
+	$(
+		function(){
+			$( document ).Test( {} );
+ 
+		}
+	);
+ 
+</script>

@@ -1,0 +1,9 @@
+
+           var text = $(this).text().split(' ');
+ 
+           for( var i = 0, len = text.length; i < len; i++ ) {
+               text[i] = '<span id="word' + parseInt(i+1) + '">' + text[i] + '</span>';
+           }
+           $(this).html(text.join(' '));
+ 
+      

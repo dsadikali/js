@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; padding:0; background:url(../img/bg.png) repeat; font:14px/22px Arial, Helvetica, sans-serif;}
+.wrapper{padding:0; width:1000px; margin:0 auto;}
+h1{color:#FFF; text-align:center; padding:0 0 30px; line-height:40px;}
+.top-part{padding:0 0 30px; width:100%;}
+.add-project{margin: 2px;}
+.add-project label{}
+.add-project label span{color:#FFF; padding:3px; width:120px; float:left;}
+.add-project label input[type=text]{background: #ECECEC; border: 0 none; float: left;  padding: 8px; width: 494px; margin-right:2px;}
+.add-project label input[type=button]{border:0; padding:7px 10px; background:#999; color:#FFF;}
+
+.select-project{padding:10px 0 0;}
+.select-project label{}
+.select-project label span{color:#FFF; padding:3px; float:left; width:120px;}
+.select-project label select{padding:3px; background:#ececec; width:482px; float:left; margin:0; border:0;}
+.select-project label input[type=button]{border:0; padding:3px 10px; background:#999; color:#FFF;}
+
+
+
+.timeBox-outer{float:right; width:306px; visibility:hidden; }
+.widecolumn{width:615px; float:left;}
+.timeBox{ float:right; padding:15px; text-align:center;background:url(../img/trans-bg.png) repeat;}
+.timeBox .hr, .timeBox .min, .timeBox .sec{display:inline-block; color:#FFF; font-size:60px; line-height:60px; text-align:center;padding:0 10px; font-family:'Play',Arial, Helvetica, sans-serif;}
+.the-time{padding-bottom:20px;}
+.timeBox .hr, .timeBox .min{border-right:dotted 1px #999;}
+.timeBox a, .clear{border:0; color:#FFF; width:150px; height:50px; line-height:50px; text-align:center; font-size:20px; font-weight:bold; display:inline-block; text-decoration:none; margin:0 5px 0; cursor:pointer;}
+.start-stop{background:#00b55e;}
+.start-stop:hover{background:#03dd74;}
+.reset{background:#b50000; display:none!important;}
+.stop, .clear{background:#b50000;}
+.stop:hover, .clear:hover{background:#e20404;}
+
+
+
+.project-grid table{width:100%;}
+.project-grid table tr{cursor:default;}
+td{color:#FFF;padding:3px 10px; font-size:20px; line-height:30px;}
+.proName{background:#999; width:90%;}
+.working-time{background:#777; font-weight:bold; text-align:right;}
+.delete{background:#c10101;}
+.delete a{color:#fff; text-decoration:none; display:block}
+
+
+.project-grid tr:hover .proName, .project-grid tr.active .proName{background:#8a8989;}
+.project-grid tr:hover .working-time, .project-grid tr.active .working-time{background:#616161;}
+
+.clear-outer{padding:20px 0 0; text-align:center; float:left; width:100%;}
+
+
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.disabled{display:none!important;}
